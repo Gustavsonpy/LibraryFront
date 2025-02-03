@@ -1,0 +1,25 @@
+.fmBook{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fmBook .imgBook{
+    width: 170px;
+    height: 200px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.fmBook span{
+    margin-bottom: 10px;
+}
+
+.fmBook span .name{
+    font-weight: bolder;
+}
+
+.fmBook button{
+    width: 100%;
+}

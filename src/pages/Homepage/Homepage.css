@@ -1,0 +1,89 @@
+.home{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", serif;
+}
+
+.home .introduction{
+    background-color: #F2B279;
+    width: 100vw;
+    margin-left: -100px;
+    margin-right: -100px;
+    height: 400px;
+}
+
+.introduction .content{
+    height: 100%;
+    display: flex;
+    font-family: "Sora", serif;
+    font-weight: normal;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.introduction .text-and-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-btn {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #D94436;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 8px 15px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+  
+.introduction-btn:hover {
+    background-color: #B3372B;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+  
+.introduction-btn:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+
+.introduction .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img{
+    width: 170px;
+    height: 200px;
+}
+
+h1{
+    font-weight: normal;
+}
