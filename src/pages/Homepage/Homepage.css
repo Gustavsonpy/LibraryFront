@@ -16,11 +16,10 @@
 
 .introduction .content{
     height: 100%;
+    width: 100%;
     display: flex;
     font-family: "Sora", serif;
     font-weight: normal;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
 .introduction .text-and-btn{
@@ -28,6 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
 .introduction-btn {
@@ -86,4 +86,13 @@
 
 h1{
     font-weight: normal;
+}
+
+#famous_book_title{
+    margin-bottom: 50px;
+}
+
+.famous-book{
+    display: flex;
+    justify-content: space-between;
 }

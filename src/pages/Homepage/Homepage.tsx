@@ -3,8 +3,8 @@ import './Homepage.css';
 import { Link } from 'react-router-dom'; 
 
 //img
-import Bible from '../../../../../images/bible.png'; 
-import btf from '../../../../../images/beatiful_book.jpg'; 
+import Bible from '../../../public/bible.png'; 
+import btf from '../../../public/beatiful_book.jpg'; 
 
 //Components
 import FamousBook from '../../components/FamousBook/FamousBook';
@@ -25,8 +25,12 @@ const Homepage = () => {
                 </div>
             </div>
             <div className="books">
-                <h1>Most famous books of the month</h1>
+                <h1 id='famous_book_title'>Most famous books of the month</h1>
                 <div className="famous-book">
+                    <FamousBook img={Bible} bookName='The Holy Bible' author='Fulano de Tal'/>
+                    <FamousBook img={btf} bookName='beatiful_book' author='Ciclano de Tal'/>
+                    <FamousBook img={Bible} bookName='The Holy Bible' author='Fulano de Tal'/>
+                    <FamousBook img={btf} bookName='beatiful_book' author='Ciclano de Tal'/>
                     <FamousBook img={Bible} bookName='The Holy Bible' author='Fulano de Tal'/>
                 </div>
             </div>

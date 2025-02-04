@@ -3,7 +3,7 @@ import './Navbar.css';
 import { NavLink } from "react-router-dom";
 
 //img
-import logo from '../../../../../images/library_logo.png';
+import logo from '../../../public/library_logo.png';
 
 const Navbar = () => {
     return(

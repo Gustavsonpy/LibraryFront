@@ -16,10 +16,27 @@
     margin-bottom: 10px;
 }
 
-.fmBook span .name{
+.fmBook .name{
     font-weight: bolder;
+}
+
+.fmBook .author{
+    font-size: 12px;
 }
 
 .fmBook button{
     width: 100%;
+}
+
+.loan-btn{
+    background-color: transparent;
+    border: 1px solid #BF5449;
+    color: #BF5449;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.loan-btn:hover {
+    background-color: #BF5449;
+    color: #FFFFFF;
 }

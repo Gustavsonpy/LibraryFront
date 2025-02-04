@@ -14,8 +14,8 @@ const FamousBook = ({img, bookName, author}: FamousBookProps) => {
         <div className="fmBook">
             <img className='imgBook' src={img} alt={bookName} />
             <span className='name'>{bookName}</span>
-            <span>{author}</span>
-            <Link to={'/'}><button>Loan</button></Link>
+            <span className='author'>{author}</span>
+            <Link to={'/'}><button className='loan-btn'>Loan</button></Link>
         </div>
     );
 }
