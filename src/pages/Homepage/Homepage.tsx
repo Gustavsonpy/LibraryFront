@@ -3,8 +3,8 @@ import './Homepage.css';
 import { Link } from 'react-router-dom'; 
 
 //img
-import Bible from '/public/bible.png'; 
-import btf from '/public/beatiful_book.jpg'; 
+import Bible from '/bible.png'; 
+import btf from '/beatiful_book.jpg'; 
 
 //Components
 import FamousBook from '../../components/FamousBook/FamousBook';
@@ -35,7 +35,7 @@ const Homepage = () => {
                     <FamousBook img={Bible} bookName='The Holy Bible' author='Fulano de Tal'/>
                 </div>
             </div>
-            <ReadingBookContainer phrase='“A leitura é uma fonte inesgotável de prazer, mas, por incrível que pareça, a quase totalidade não sente esta sede.”' author="- Carlos Drummond de Andrade"/>
+            <ReadingBookContainer phrase='“Reading is an inexhaustible source of pleasure, but, surprisingly, almost everyone does not feel this thirst.”' author="- Carlos Drummond de Andrade"/>
         </div>
     );
 }
