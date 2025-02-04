@@ -1,0 +1,22 @@
+.phraseContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #012626;
+    color: white;
+    padding-block: 50px;
+    margin-block: 100px;
+    width: 100%;
+    /* max-width: calc(100% - 200px); */
+    overflow-x: hidden;
+}
+
+#phrase{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+#author{
+    font-size: 12px;
+}
