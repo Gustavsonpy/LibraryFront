@@ -1,0 +1,32 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-inline: -100px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    margin-inline: 30px;
+}
+
+.left_side{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.social_media{
+    display: flex;
+}
+
+.social_media img{
+    width: 24px;
+    height: 24px;
+}
+
+.instagram{
+    fill: red;
+}

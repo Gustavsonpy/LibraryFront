@@ -9,6 +9,7 @@ import btf from '/beatiful_book.jpg';
 //Components
 import FamousBook from '../../components/FamousBook/FamousBook';
 import ReadingBookContainer from '../../components/ReadingBookContainer/ReadingBookContainer';
+import Footer from '../../components/Footer/Footer';
 
 const Homepage = () => {
     return(
@@ -36,6 +37,7 @@ const Homepage = () => {
                 </div>
             </div>
             <ReadingBookContainer phrase='“Reading is an inexhaustible source of pleasure, but, surprisingly, almost everyone does not feel this thirst.”' author="- Carlos Drummond de Andrade"/>
+            <Footer/>
         </div>
     );
 }
