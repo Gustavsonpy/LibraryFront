@@ -2,8 +2,11 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 //images
-import facebook_logo from '/icons/facebook_icon.png';
-import instagram_logo from '/icons/instagram_icon.svg';
+import InstagramSvg from '../../icons/InstagramSvg';
+import FacebookSvg from '../../icons/FacebookSvg';
+import XSvg from '../../icons/XSvg';
+import GithubSvg from '../../icons/GithubSvg';
+import YoutubeSvg from '../../icons/YoutubeSvg';
 
 const Footer = () => {
     return(
@@ -13,11 +16,11 @@ const Footer = () => {
                     <img src="" alt="library_logo" />
                     <span>Making the world a better place through constructing elegant hierarchies</span>
                     <div className="social_media">
-                        <img src={facebook_logo} alt="facebook" />
-                        <img src={instagram_logo} alt="instagram" />
-                        <img src="" alt="X" />
-                        <img src="" alt="github" />
-                        <img src="" alt="youtube" />
+                        <FacebookSvg fill='#000000' width={32} height={32}/>
+                        <InstagramSvg fill="#000000" width={32} height={32} />
+                        <XSvg fill='red' width={32} height={32}/>
+                        <GithubSvg fill='black' height={32} width={32}/>
+                        <YoutubeSvg fill='red' height={32} width={32}/>
                     </div>
                 </div>
                 <div className="links">
