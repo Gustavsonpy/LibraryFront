@@ -4,18 +4,26 @@ footer{
     align-items: center;
     width: 100vw;
     margin-inline: -100px;
+    background-color: #111111;
+    height: 400px;
 }
 
 .content{
     display: flex;
     width: 100vw;
-    margin-inline: 30px;
 }
 
 .left_side{
     display: flex;
     flex-direction: column;
+    justify-content: start;
     width: 30%;
+    margin-left: 100px;
+    gap: 40px;
+}
+
+#logo{
+    margin: 0
 }
 
 .social_media{
@@ -28,4 +36,25 @@ footer{
 .social_media img{
     width: 24px;
     height: 24px;
+}
+
+.right_side{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    gap: 100px;
+}
+
+.solution, .support, .company, .legal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    color: white;
+}
+
+.link_text{
+    color: #9CA4B2;
 }

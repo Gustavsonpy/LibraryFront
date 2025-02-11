@@ -7,49 +7,50 @@ import FacebookSvg from '../../icons/FacebookSvg';
 import XSvg from '../../icons/XSvg';
 import GithubSvg from '../../icons/GithubSvg';
 import YoutubeSvg from '../../icons/YoutubeSvg';
+import logo from '../../img/library_logo.png';
 
 const Footer = () => {
     return(
         <footer>
             <div className="content">
                 <div className="left_side">
-                    <img src="" alt="library_logo" />
-                    <span>Making the world a better place through constructing elegant hierarchies</span>
+                    <img id='logo' src={logo} alt="library_logo" />
+                    <span className='link_text'>Making the world a better place through constructing elegant hierarchies</span>
                     <div className="social_media">
-                        <FacebookSvg fill='#000000' width={32} height={32}/>
-                        <InstagramSvg fill="#000000" width={32} height={32} />
-                        <XSvg fill='red' width={32} height={32}/>
-                        <GithubSvg fill='black' height={32} width={32}/>
-                        <YoutubeSvg fill='red' height={32} width={32}/>
+                        <Link to='/'><FacebookSvg width={26} height={26}/></Link>
+                        <Link to='/'><InstagramSvg width={26} height={26} /></Link>
+                        <Link to='/'><XSvg width={26} height={26}/></Link>
+                        <Link to='/'><GithubSvg height={26} width={26}/></Link>
+                        <Link to='/'><YoutubeSvg height={26} width={26} poligo_color='black'/></Link>
                     </div>
                 </div>
-                <div className="links">
+                <div className="right_side">
                     <div className="solution">
                         <span className='title'>Solution</span>
-                        <Link to='/'><span>Marketing</span></Link>
-                        <Link to='/'><span>Analytics</span></Link>
-                        <Link to='/'><span>Automation</span></Link>
-                        <Link to='/'><span>Commerce</span></Link>
-                        <Link to='/'><span>Insights</span></Link>
+                        <Link to='/'><span className='link_text'>Marketing</span></Link>
+                        <Link to='/'><span className='link_text'>Analytics</span></Link>
+                        <Link to='/'><span className='link_text'>Automation</span></Link>
+                        <Link to='/'><span className='link_text'>Commerce</span></Link>
+                        <Link to='/'><span className='link_text'>Insights</span></Link>
                     </div>
                     <div className="support">
                         <span className='title'>Support</span>
-                        <Link to='/'><span>Submit ticket</span></Link>
-                        <Link to='/'><span>Documentation</span></Link>
-                        <Link to='/'><span>Guide</span></Link>
+                        <Link to='/'><span className='link_text'>Submit ticket</span></Link>
+                        <Link to='/'><span className='link_text'>Documentation</span></Link>
+                        <Link to='/'><span className='link_text'>Guide</span></Link>
                     </div>
                     <div className="company">
                         <span className='title'>Company</span>
-                        <Link to='/'><span>About</span></Link>
-                        <Link to='/'><span>Blog</span></Link>
-                        <Link to='/'><span>Jobs</span></Link>
-                        <Link to='/'><span>Press</span></Link>
+                        <Link to='/'><span className='link_text'>About</span></Link>
+                        <Link to='/'><span className='link_text'>Blog</span></Link>
+                        <Link to='/'><span className='link_text'>Jobs</span></Link>
+                        <Link to='/'><span className='link_text'>Press</span></Link>
                     </div>
                     <div className="legal">
                         <span className='title'>Legal</span>
-                        <Link to='/'><span>Terms of service</span></Link>
-                        <Link to='/'><span>Privacy policy</span></Link>
-                        <Link to='/'><span>License</span></Link>
+                        <Link to='/'><span className='link_text'>Terms of service</span></Link>
+                        <Link to='/'><span className='link_text'>Privacy policy</span></Link>
+                        <Link to='/'><span className='link_text'>License</span></Link>
                     </div>
                 </div>
             </div>
