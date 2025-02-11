@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="content">
                 <div className="left_side">
                     <img id='logo' src={logo} alt="library_logo" />
-                    <span className='link_text'>Making the world a better place through constructing elegant hierarchies</span>
+                    <span className='link_text'>Enables thousands of readers to find their favorite books</span>
                     <div className="social_media">
                         <Link to='/'><FacebookSvg width={26} height={26}/></Link>
                         <Link to='/'><InstagramSvg width={26} height={26} /></Link>
