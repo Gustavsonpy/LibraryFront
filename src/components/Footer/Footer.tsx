@@ -25,26 +25,16 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="right_side">
-                    <div className="solution">
-                        <span className='title'>Solution</span>
-                        <Link to='/'><span className='link_text'>Marketing</span></Link>
-                        <Link to='/'><span className='link_text'>Analytics</span></Link>
-                        <Link to='/'><span className='link_text'>Automation</span></Link>
-                        <Link to='/'><span className='link_text'>Commerce</span></Link>
-                        <Link to='/'><span className='link_text'>Insights</span></Link>
-                    </div>
-                    <div className="support">
-                        <span className='title'>Support</span>
-                        <Link to='/'><span className='link_text'>Submit ticket</span></Link>
-                        <Link to='/'><span className='link_text'>Documentation</span></Link>
-                        <Link to='/'><span className='link_text'>Guide</span></Link>
+                    <div className="service">
+                        <span className='title'>Service</span>
+                        <Link to='/'><span className='link_text'>Loan</span></Link>
+                        <Link to='/'><span className='link_text'>Buy</span></Link>
+                        <Link to='/'><span className='link_text'>Books</span></Link>
                     </div>
                     <div className="company">
                         <span className='title'>Company</span>
                         <Link to='/'><span className='link_text'>About</span></Link>
                         <Link to='/'><span className='link_text'>Blog</span></Link>
-                        <Link to='/'><span className='link_text'>Jobs</span></Link>
-                        <Link to='/'><span className='link_text'>Press</span></Link>
                     </div>
                     <div className="legal">
                         <span className='title'>Legal</span>
