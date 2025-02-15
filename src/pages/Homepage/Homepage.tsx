@@ -9,8 +9,35 @@ import btf from '/beatiful_book.jpg';
 //Components
 import FamousBook from '../../components/FamousBook/FamousBook';
 import ReadingBookContainer from '../../components/ReadingBookContainer/ReadingBookContainer';
+import { useEffect, useState } from 'react';
 
 const Homepage = () => {
+    
+    type Book = {
+        id: number,
+        autor: string,
+        image: string,
+        name: string,
+        pages: number,
+        fk_category: number;
+    }
+
+    const [books, setBooks] = useState<Book[]>([]);
+
+    const getBook = async(url: string) => {
+        try{
+            const response = await fetch(url);
+            const data = await response.json();
+            setBooks(data);
+        }catch(error){
+            console.log('Error to fetch');
+        }
+    }
+
+    useEffect(() => {
+        getBook('http://localhost:8080/book/v1/getBooks');
+    }, [])
+    
     return(
         <div className="home">
             <div className="introduction">
@@ -28,11 +55,9 @@ const Homepage = () => {
             <div className="books">
                 <h1 id='famous_book_title'>Most famous books of the month</h1>
                 <div className="famous-book">
-                    <FamousBook img={Bible} bookName='The Holy Bible' author='Fulano de Tal'/>
-                    <FamousBook img={btf} bookName='beatiful_book' author='Ciclano de Tal'/>
-                    <FamousBook img={Bible} bookName='The Holy Bible' author='Fulano de Tal'/>
-                    <FamousBook img={btf} bookName='beatiful_book' author='Ciclano de Tal'/>
-                    <FamousBook img={Bible} bookName='The Holy Bible' author='Fulano de Tal'/>
+                    {books.map((book, index) => (
+                        <FamousBook key={index} img={book.image} bookName={book.name} author={book.autor}/>
+                    ))}
                 </div>
             </div>
             <ReadingBookContainer phrase='“Reading is an inexhaustible source of pleasure, but, surprisingly, almost everyone does not feel this thirst.”' author="- Carlos Drummond de Andrade"/>
