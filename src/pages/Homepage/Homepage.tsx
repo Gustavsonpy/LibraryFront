@@ -23,14 +23,18 @@ const Homepage = () => {
     }
 
     const [books, setBooks] = useState<Book[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
 
     const getBook = async(url: string) => {
         try{
             const response = await fetch(url);
             const data = await response.json();
             setBooks(data);
+            
+            data.length === 0 ? setLoading(true) : setLoading(false);
         }catch(error){
             console.log('Error to fetch');
+            setLoading(true);
         }
     }
 
@@ -55,9 +59,13 @@ const Homepage = () => {
             <div className="books">
                 <h1 id='famous_book_title'>Most famous books of the month</h1>
                 <div className="famous-book">
-                    {books.map((book, index) => (
-                        <FamousBook key={index} img={book.image} bookName={book.name} author={book.autor}/>
-                    ))}
+                    {
+                        loading
+                            ? <span>Loading...</span>
+                            : books.map((book, index) => (
+                                <FamousBook key={index} img={book.image} bookName={book.name} author={book.autor}/>
+                            ))
+                    }
                 </div>
             </div>
             <ReadingBookContainer phrase='“Reading is an inexhaustible source of pleasure, but, surprisingly, almost everyone does not feel this thirst.”' author="- Carlos Drummond de Andrade"/>
