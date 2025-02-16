@@ -8,11 +8,11 @@ import logo from '/library_logo.png';
 const Navbar = () => {
     return(
         <nav>
-            <img src={logo} alt="logo"/>
+            <NavLink to='/'><img src={logo} alt="logo"/></NavLink>
             <div className="options">
-                <NavLink className="navOption" to={'/'}>About</NavLink>
-                <NavLink className="navOption" to={'/'}>Books</NavLink>
-                <NavLink className="navOption" to={'/'}>Profile</NavLink>
+                <NavLink className="navOption" to={'/about'}>About</NavLink>
+                <NavLink className="navOption" to={'/books'}>Books</NavLink>
+                <NavLink className="navOption" to={'/profile'}>Profile</NavLink>
             </div>
         </nav>
     );
