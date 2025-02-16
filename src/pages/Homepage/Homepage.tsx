@@ -9,38 +9,11 @@ import btf from '/beatiful_book.jpg';
 //Components
 import FamousBook from '../../components/FamousBook/FamousBook';
 import ReadingBookContainer from '../../components/ReadingBookContainer/ReadingBookContainer';
-import { useEffect, useState } from 'react';
+import useBooks from '../../hooks/useBooks';
 
 const Homepage = () => {
     
-    type Book = {
-        id: number,
-        autor: string,
-        image: string,
-        name: string,
-        pages: number,
-        fk_category: number;
-    }
-
-    const [books, setBooks] = useState<Book[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-
-    const getBook = async(url: string) => {
-        try{
-            const response = await fetch(url);
-            const data = await response.json();
-            setBooks(data);
-            
-            data.length === 0 ? setLoading(true) : setLoading(false);
-        }catch(error){
-            console.log('Error to fetch');
-            setLoading(true);
-        }
-    }
-
-    useEffect(() => {
-        getBook('http://localhost:8080/book/v1/getBooks');
-    }, [])
+    const [books, loading] = useBooks("http://localhost:8080/book/v1/getBooks");
     
     return(
         <div className="home">
