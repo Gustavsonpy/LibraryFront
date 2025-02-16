@@ -13,7 +13,7 @@ import useBooks from '../../hooks/useBooks';
 
 const Homepage = () => {
     
-    const [books, loading] = useBooks("http://localhost:8080/book/v1/getBooks");
+    const [books, loading] = useBooks('http://localhost:8080/book/v1/getBooks');
     
     return(
         <div className="home">
