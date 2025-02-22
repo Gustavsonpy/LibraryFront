@@ -5,7 +5,19 @@
     gap: 30px;
 }
 
-
+.banner{
+    background-image: url('../../img/books_banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .booksContainer{
     display: flex;

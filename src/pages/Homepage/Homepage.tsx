@@ -29,7 +29,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
-            <div className="books">
+            <div className="famous-book-container">
                 <h1 id='famous_book_title'>Most famous books of the month</h1>
                 <div className="famous-book">
                     {
